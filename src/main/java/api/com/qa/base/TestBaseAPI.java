@@ -27,7 +27,7 @@ public class TestBaseAPI {
 		String baseUrl = prop.getProperty("url");
 		String serviceUrl = prop.getProperty("serviceurl");
 		String queryUrl = prop.getProperty("queryurl");
-		String getUrl = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Bangalore?unitGroup=metric&key=LB8XKDCKKPJZ246FRFHPFRY6Q&contentType=json";//baseUrl + serviceUrl + Location + queryUrl + KEY; 
+		String getUrl = baseUrl + serviceUrl + Location + queryUrl + KEY+"&contentType=json"; //"https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/Bangalore?unitGroup=metric&key=LB8XKDCKKPJZ246FRFHPFRY6Q&contentType=json";
 		return getUrl;
 	}
 
